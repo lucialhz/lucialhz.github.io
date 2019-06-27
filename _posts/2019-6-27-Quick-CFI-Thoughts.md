@@ -35,10 +35,8 @@ I think shadow stacks should be implemented in any solution I adopt - perhaps R.
 
 I have also rediscovered my love for signature based CFI, which is what I planned on using for an attestation based CFI mechanism (much similar to <a href="http://arxiv.org/abs/1605.07763">C-FLAT</a>).
 
-(C-FLAT)[http://arxiv.org/abs/1605.07763]
-
 ## Papers to re-discover
 
 Yang et al and Werner et al.
 
-This blog post has been brought to you by an excellent paper by de Clercq and Verbauwhede - (A survey of Hardware-based Control Flow Integrity (CFI))[http://arxiv.org/abs/1706.07257] which I have only reached section 6.13 so far.
+This blog post has been brought to you by an excellent paper by de Clercq and Verbauwhede - <a href="http://arxiv.org/abs/1706.07257">A survey of Hardware-based Control Flow Integrity (CFI)</a> which I have only reached section 6.13 so far.
