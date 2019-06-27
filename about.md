@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm currently completing my MSc in Information Security with an intention of securing a change of career into InfoSec.
 
-### More Information
+### Professional Experience
 
-A place to include any other types of information that you'd like to include about yourself.
+For the past 7 years I have been a software developer specialising in smart homes and smart buildings.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[athertonlaa@gmail.com](mailto:athertonlaa@gmail.com)
