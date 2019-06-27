@@ -8,3 +8,13 @@ Having reviewed a fair bit of literature of CFI it amazes me to see the huge var
 # Signature Modelling
 
 When I first learnt of CFI, it was described in relation to control-flow graphs (CFGs). Here if a series of executed instructions do not follow the trace of the program's CFG the control-flow integrity has been lost.
+[The paper written by Yang et al in 2013](http://dx.doi.org/10.1016/j.cja.2013.02.019) did a very good job at describing this method as implemented in software. They also performed a throrough analysis of various existing solutions (page 2).
+I first saw this methodology in use in hardware in the [paper written by Werner et al in 2016](http://link.springer.com/10.1007/978-3-319-31271-2_10) although I have to admit I got a bit scared off after seeing all of the algebra! I think I'll have to return to this paper at a later date.
+
+# 
+
+# To-do List
+
+# Papers to re-discover
+
+Yang et al and Werner et al.
