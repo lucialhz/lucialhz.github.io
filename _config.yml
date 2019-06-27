@@ -9,7 +9,7 @@ name: Luke Atherton (LucialHz) Blog
 description: Information security MSc student career-shifting from a successful background in software development. Keen eye for detail and patterns. Adopter of new technologies and methodologies. Tinkerer at heart but loves a good process.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://media.licdn.com/dms/image/C4D03AQHl5agsNFfMKw/profile-displayphoto-shrink_200_200/0?e=1567036800&v=beta&t=FTpwuH3-kCRYJ3XqQ0WO0ZDjO80gdWUaMItNUxOGFHQ
+avatar: https://github.com/lucialhz.png
 
 #
 # Flags below are optional
@@ -22,8 +22,8 @@ footer-links:
   facebook:
   flickr:
   github: lucialhz
-  instagram:
-  linkedin:
+  instagram: 
+  linkedin: https://www.linkedin.com/in/luke-a-atherton/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: LucialHz
