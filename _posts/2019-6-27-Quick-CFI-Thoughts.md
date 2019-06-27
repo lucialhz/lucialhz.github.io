@@ -1,6 +1,8 @@
 ---
 layout: post
 title: CFI - Some quick thoughts
+categories: [MScProject, CFI]
+tags: [signatureModelling, BasicBlocks, ShadowStacks, CFG]
 ---
 
 Having reviewed a fair bit of literature of CFI it amazes me to see the huge variety in solutions.
