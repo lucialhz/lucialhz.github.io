@@ -30,7 +30,9 @@ void GreaterThanPlusOne(int firstNum, int secondNum)
         }
     }
 ```
+
 The instructions from `string message;` to and including `if (firstNum > secondNum)` will sequentially (barring an exception being thrown). This is a basic block. The contents within the `if` and also the `else` parenthesis are also basic blocks.
+
 ## Control-flow graphs
 
 ## Types of branches
