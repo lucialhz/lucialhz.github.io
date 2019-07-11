@@ -47,8 +47,26 @@ An important aspect to consider is the difference between branch instruction typ
 
 ### Direct
 
+A direct branch is one where the jump to instruction is hard coded - the control can flow to a pre-defined location.
+
+This can be violated by a hardware attack such as glitching to skip instructions or from an attack directly on memory where the destination address is swapped for another.
+
 ### Indirect
+
+An indirect branch is one where the next instruction address is set at run-time, either through registers or pointers pointing to addresses in memory containing the jump destination. This could be the result of a compiled switch-case statement or dynamic libraries (e.g. reflection). In the case of the switch-case statement it is not so indirect in the source code, however when compiled has the possibility of indirectness.
+
+In what common ways are these violated?
 
 ### Unintended
 
+<a href="http://arxiv.org/abs/1706.07257">De Clerq</a> describes an indirect branch as one which arises due to variable length instruction encoding in architectures. An attacker alters control flow to the middle of an instruction. A high percentage (80%) of gadgets exploit this, according to <a href="https://ieeexplore.ieee.org/document/6355533">Kayaalp</a>. For more information reference section 4.2 of Kayaalp's work which describes unintended branches in detail. Does this affect embedded systems architectures?
+
+### Function Return
+
+When a function returns to its calling section of code it references the stack for its return address. The interesting part here is that it is not hard coded and according to a CFG a function could legally return to any locations in code which call that function. Tracking a path taken along the CFG allows the checking of calling location, to make sure the function has returned to the correct caller.
+
+If the stack is attacked the return address can be re-written to point to existing code, or instructions placed in data (this is usually protected for by read XOR write). This is a well-explored area in computer security with various existing solutions including stack canaries.
+
 ## Loops
+
+Loops are problematic in terms of CFG. Modelling a loop which could run indefinately is not feasible with CFGs. Various methods has been used to approach this, with some simply compacting loops (this presents issues where an attacker continually run a loop until they reach the desired outcome, such as PIN attempts. Although would this not be fixed by control flow checks within the loop?) while <a href="http://dx.doi.org/10.1145/3061639.3062276">others</a> track loop metadata such as iteration count.
