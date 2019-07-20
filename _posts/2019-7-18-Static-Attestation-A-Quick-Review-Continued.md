@@ -19,7 +19,7 @@ This work (again software-based) focusses on filling empty memory with predictab
 
 ## On the Difficulty of Software-Based Attestation of Embedded Devices
 
-This paper proves that my fears around software-based attestation were unfounded. The attack SWATT by adding a hook into the attestation code which swaps out malicious code to data memory, as a result they recommend covering all memory in attestation processes (which they note would not be easy in embedded systems). They note that the time overhead relied upon by SWATT is imprecise and that their attacks fit within the tolerance. The paper also attacks solutions which fill empty memory with noise, they found they could compress legitimate applications to make room for malicious ones.
+This paper proves that my fears around software-based attestation were not unfounded. The attack SWATT by adding a hook into the attestation code which swaps out malicious code to data memory, as a result they recommend covering all memory in attestation processes (which they note would not be easy in embedded systems). They note that the time overhead relied upon by SWATT is imprecise and that their attacks fit within the tolerance. The paper also attacks solutions which fill empty memory with noise, they found they could compress legitimate applications to make room for malicious ones.
 
 ## What I have learnt in this post
 
