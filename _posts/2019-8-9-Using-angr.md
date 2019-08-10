@@ -57,7 +57,7 @@ cd to cfg-explorer directory, run `pip install .`
 
 
 To make graphs
-
+```
 import angr
 p = angr.Project('fauxware', load_options={'auto_load_libs':False}) //where fauxware is the binary
 cfg = p.analyses.CFGFast() // create CFG, can also use the other CFG method
@@ -67,5 +67,6 @@ import networkx as nx // to use networkx functionality
 nx.write_multiline_adjlist(cfgb.graph,"test.adjlist") // creates adjlist - https://networkx.github.io/documentation/stable/reference/readwrite/adjlist.html or https://networkx.github.io/documentation/stable/reference/readwrite/multiline_adjlist.html
 nx.write_edgelist(cfgb.graph, "test.edgelist") // creates edge list - https://networkx.github.io/documentation/stable/reference/readwrite/edgelist.html
 nx.write_gpickle(cfgb.graph, "test.gpickle") // creates gpickle - https://networkx.github.io/documentation/stable/reference/readwrite/gpickle.html
+```
 
 Edgelist seems to make most amount of sense. Although we really need entire paths. Unless we build them ourselves...
